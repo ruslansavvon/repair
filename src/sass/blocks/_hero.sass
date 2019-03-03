@@ -7,6 +7,7 @@
     flex-basis: 50%
     padding-right: 100px
     &__title
+      text-align: center
       font-size: 41px
       line-height: 55px
       margin-bottom: 40px
@@ -16,6 +17,7 @@
       display: inline-block
       font-size: 20px
       margin-bottom: 70px
+      +bold
   &-list
     margin: 0
     padding: 0 
@@ -38,12 +40,22 @@
       max-width: 300px
 @media (max-width: 1200px)
   .hero
-    &-block 
+    &-block
+      display: flex
+      align-items: center
+      justify-content: center 
       flex-direction: column
     &-list 
       margin-bottom: 44px
-    &-text 
+    &-text
+      display: flex
+      align-items: center
+      flex-direction: column 
       padding-right: 10px
+    &__image
+      display: flex
+      align-items: center
+      justify-content: center
 @media (max-width: 768px)
   .hero
     &-text 
