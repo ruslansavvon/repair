@@ -8,6 +8,10 @@
     display: flex
     align-items: center
     text-align: right
+    margin-right: -5px
+  &__contacts
+    margin-right: -5px
+    
     
   &__address 
     display: flex
@@ -35,3 +39,24 @@
       padding: 15px 26px
     &__logo
       width: 90px
+@media (max-width: 576px)
+  .container
+    width: 320px
+  .navbar
+    padding: 17px 0
+    &__info
+      margin-right: 45px
+    &__button
+        margin-top: -8px
+        border-radius: 4px
+        height: 41px
+        font-size: 10px
+        +bold
+    &-block
+      display: flex
+      justify-content: space-between
+      
+     
+      
+
+  

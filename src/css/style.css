@@ -49,7 +49,7 @@ img {
 
 @media (max-width: 576px) {
   .container {
-    width: 324px;
+    max-width: 320px;
   }
 }
 
@@ -117,6 +117,11 @@ img {
       -ms-flex-align: center;
           align-items: center;
   text-align: right;
+  margin-right: -5px;
+}
+
+.navbar__contacts {
+  margin-right: -5px;
 }
 
 .navbar__address {
@@ -162,6 +167,34 @@ img {
   }
 }
 
+@media (max-width: 576px) {
+  .container {
+    width: 320px;
+  }
+  .navbar {
+    padding: 17px 0;
+  }
+  .navbar__info {
+    margin-right: 45px;
+  }
+  .navbar__button {
+    margin-top: -8px;
+    border-radius: 4px;
+    height: 41px;
+    font-size: 10px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+  }
+  .navbar-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 /*стили для главного экрана*/
 .hero {
   padding: 50px 0;
@@ -172,6 +205,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero-text {
@@ -181,7 +217,7 @@ img {
 }
 
 .hero-text__title {
-  text-align: center;
+  text-align: left;
   font-size: 41px;
   line-height: 55px;
   margin-bottom: 40px;
@@ -198,6 +234,8 @@ img {
 }
 
 .hero-list {
+  font-size: 14px;
+  line-height: 1.2;
   margin: 0;
   padding: 0;
 }
@@ -234,7 +272,8 @@ img {
 }
 
 .hero-list__text {
-  max-width: 300px;
+  line-height: 1.7;
+  width: 300px;
 }
 
 @media (max-width: 1200px) {
@@ -269,6 +308,9 @@ img {
             flex-direction: column;
     padding-right: 10px;
   }
+  .hero-text__title {
+    text-align: center;
+  }
   .hero__image {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -300,6 +342,34 @@ img {
   }
   .hero-list__image {
     margin-right: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 17px;
+  }
+  .hero-text {
+    width: 314px;
+    margin-top: 4px;
+  }
+  .hero-text__title {
+    text-align: left;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+  .hero-text__subtitle {
+    width: 260px;
+    margin-left: -40px;
+  }
+  .hero-list__item {
+    margin-top: 2px;
+    margin-right: 44px;
+  }
+  .hero-list__text {
+    line-height: 1.2;
+    margin-right: 5px;
+    max-width: 200px;
   }
 }
 
@@ -380,6 +450,7 @@ img {
 
 .offer__info {
   max-width: 240px;
+  font-size: 15px;
   line-height: 24px;
 }
 
@@ -390,6 +461,7 @@ img {
 
 .offer__call {
   color: #333333;
+  font-size: 15px;
   line-height: 24px;
   text-decoration: none;
   font-family: 'Museo Sans Bold', sans-serif;
@@ -434,6 +506,44 @@ img {
   }
 }
 
+@media (max-width: 576px) {
+  .offer__title {
+    text-align: left;
+    width: 270px;
+    margin-right: 50px;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 19px;
+  }
+  .offer__subtitle {
+    margin-right: 75px;
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+  .offer__input {
+    padding: 23px 23px;
+    width: 275px;
+  }
+  .offer__button {
+    width: 275px;
+    font-size: 14px;
+    line-height: 1.1;
+    padding: 19px 62px;
+  }
+  .offer-footer {
+    width: 230px;
+    margin-top: -31px;
+    margin-left: 5px;
+  }
+  .offer__info {
+    padding-top: 23px;
+    font-size: 15px;
+  }
+  .offer-call {
+    margin-top: 8px;
+  }
+}
+
 /*подключаем стили для блока portfolio*/
 .portfolio {
   background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
@@ -441,8 +551,10 @@ img {
 }
 
 .portfolio__title {
-  max-width: 500px;
+  max-width: 790px;
   margin: auto;
+  font-size: 30px;
+  line-height: 45px;
   margin-bottom: 100px;
 }
 
@@ -459,7 +571,41 @@ img {
 }
 
 .slider__image {
+  width: 370px;
   margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .portfolio__title {
+    width: 455px;
+  }
+}
+
+@media (max-width: 786px) {
+  .portfolio__title {
+    width: 455px;
+  }
+  .portfolio .slick-slider {
+    width: 490px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio__title {
+    width: 280px;
+    margin-top: -11px;
+    margin-bottom: 42px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .portfolio__arrows {
+    margin-top: 46px;
+  }
+  .portfolio .slick-slider {
+    width: 245px;
+    margin: auto;
+  }
 }
 
 /*подключаем стили модального окна*/
