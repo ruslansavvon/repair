@@ -26,32 +26,26 @@
   &__text
     font-size: 14px
     line-height: 21px
-    max-width: 146px
+    max-width: 152px
     margin: auto
     +reg
   &s
     margin-top: -53px
     &__title
+      font-size: 30px
+      width: 670px
+      line-height: 45px
       margin: auto
-      margin-bottom: 59px
+      margin-bottom: 49px
       +bold
     &__subtitle
       text-align: center
-      margin-bottom: 58px
+      margin-bottom: 70px
       font-size: 20px
       +reg
     &-block
       display: flex
       flex-wrap: wrap
-
-@media (max-width: 768px)
-  .step
-    margin-bottom: 30px
-    &:after
-      display: none
-    &s 
-      &-block
-        flex-direction: column
 @media (max-width: 1200px)
   .step
     margin-bottom: 30px
@@ -61,4 +55,17 @@
     &s 
       &-block 
         justify-content: center
+@media (max-width: 768px)
+  .step
+    margin-bottom: 30px
+    &:after
+      display: none
+    &s 
+      &-block
+        flex-direction: column
+@media (max-width: 576px)
+  .steps
+    &__title
+      max-width: 275px 
+      font-size: 18px
 
