@@ -150,6 +150,7 @@ h1, h2, strong {
   height: 49px;
   margin-left: 35px;
   font-size: 13px;
+  outline: none;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -429,6 +430,7 @@ h1, h2, strong {
   margin-bottom: 30px;
   width: 240px;
   height: 61px;
+  outline: none;
 }
 
 .offer__input:first-child {
@@ -439,6 +441,7 @@ h1, h2, strong {
   width: 100%;
   min-height: 70px;
   margin-bottom: 30px;
+  outline: none;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -774,10 +777,9 @@ h1, h2, strong {
     margin-bottom: 63px;
     font-size: 14px;
   }
-  .card__title {
-    margin-top: -12px;
-    margin-left: 1px;
-    font-size: 14px;
+  .card:first-child__title {
+    margin-top: 10px;
+    font-size: 11px;
   }
 }
 
@@ -928,6 +930,7 @@ h1, h2, strong {
   width: 100%;
   max-width: 370px;
   margin-bottom: 24px;
+  outline: none;
 }
 
 .brif__button {
@@ -936,6 +939,7 @@ h1, h2, strong {
   max-width: 370px;
   margin-top: 15px;
   margin-bottom: 30px;
+  outline: none;
 }
 
 .interview {
@@ -1146,6 +1150,13 @@ h1, h2, strong {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-bottom: 39px;
+}
+
+.contacts-list__call {
+  color: #333333;
+  text-decoration: none;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
